@@ -1,0 +1,11 @@
+framework module WidgetFramework {
+  umbrella header "WidgetFramework.h"
+
+  export *
+  module * { export * }
+}
+
+module WidgetFramework.Swift {
+  header "WidgetFramework-Swift.h"
+  requires objc
+}
