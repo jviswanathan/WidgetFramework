@@ -6,7 +6,7 @@ Pod::Spec.new do |s|
     s.homepage     = "https://github.com/jviswanathan/WidgetFramework"
     s.license = { :type => "Testing", :file => "LICENSE" }
     s.author             = { "Jviswan" => "jviswanathan@venuetize.com" }
-    s.source       = { :git => "https://github.com/jviswanathan/WidgetFramework/tree/main/Specs.git", :branch => "main", :tag => "#{s.version}" }
+    s.source       = { :git => "https://github.com/jviswanathan/WidgetFramework", :branch => "main", :tag => "#{s.version}" }
     s.vendored_frameworks = "WidgetFramework.xcframework"
     s.platform = :ios
     s.swift_version = "5.4"
