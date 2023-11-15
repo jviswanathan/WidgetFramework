@@ -1,20 +1,21 @@
 Pod::Spec.new do |s|
     s.name         = “Widget”Framework
     s.version      = "1.0.0"
-    s.summary      = "A brief description of MyFramework project."
+    s.summary      = “Sample widget framework.”
     s.description  = <<-DESC
     An extended description of MyFramework project.
     DESC
-    s.homepage     = "http://your.homepage/here"
+    s.homepage     = "https://github.com/jviswanathan/WidgetFramework"
     s.license = { :type => 'Copyright', :text => <<-LICENSE
-                   Copyright 2018
+                   Copyright 2023
                    Permission is granted to...
                   LICENSE
                 }
     s.author             = { "jviswanathan" => "jviswanathan@venuetize.com" }
-    s.source       = { :git => "/Users/jagadish/WidgetFramework/WidgetFramework.git", :tag => "#{s.version}" }
-    s.vendored_frameworks = "MyFramework.xcframework"
+    s.source       = { :git => "https://github.com/jviswanathan/WidgetFramework/tree/main/Specs.git”, :branch => "main", :tag => "#{s.version}" }
+    s.vendored_frameworks = “WidgetFramework.xcframework"
     s.platform = :ios
-    s.swift_version = "4.2"
+    s.swift_version = “5.5”
     s.ios.deployment_target  = '13.0’
+    s.requires_arc = true
 end
